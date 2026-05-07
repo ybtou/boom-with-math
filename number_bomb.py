@@ -30,13 +30,13 @@ def number_bomb_game():
         # input()函数用于获取用户输入，返回字符串类型
         # int()函数将字符串转换为整数
         try:
-            # 尝试将用户输入转换为整数
+            # 将用户输入转换为整数
             user_guess = int(input(f"请输入你猜测的数字（{low}-{high}）："))
             
             # 检查用户输入是否在有效范围内
             if user_guess < low or user_guess > high:
                 # 如果输入超出范围，提示用户并重新开始循环
-                print(f"请输入{low}到{high}之间的数字！\n")
+                print(f"请输入{low}-{high}之间的数字！\n")
                 continue
                 
         except ValueError:
